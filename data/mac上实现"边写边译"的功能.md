@@ -1,4 +1,4 @@
-# mac上实现"边写边译"的功能
+ # mac上实现"边写边译"的功能
 
 ## **背景**
 
@@ -18,7 +18,7 @@ chrome浏览器有一个叫"沉浸式翻译"的插件,按下三下空格,就能�
 
 这里的翻译接口可以用快捷指令实现,如下图:
 
-<img width="1192" height="469" alt="image" src="https://github.com/user-attachments/assets/8ce20a2e-9fcc-419f-a005-766b3b06f655" />
+![](https://github.com/user-attachments/assets/8ce20a2e-9fcc-419f-a005-766b3b06f655)
 
 
 模拟键盘操作,我使用的是 hammerspoon 这个软件,免费开源的,先安装一下.辅助权限什么的都打开.
