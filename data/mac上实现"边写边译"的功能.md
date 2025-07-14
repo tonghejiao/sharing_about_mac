@@ -25,7 +25,8 @@ chrome浏览器有一个叫"沉浸式翻译"的插件,按下三下空格,就能�
 
 启动成功后,要编辑脚本.脚本文件在如图位置打开
 
-<img width="340" height="486" alt="image" src="https://github.com/user-attachments/assets/c3664e2f-430e-4f92-bcd6-dd5b083dd030" />
+![](https://github.com/user-attachments/assets/c3664e2f-430e-4f92-bcd6-dd5b083dd030)
+
 
 点击上图的 open config 按钮,就会自动打开一个叫做 init.lua 的脚本文件
 
@@ -58,7 +59,7 @@ end)
 
 粘贴完了以后,保存一下文件,然后重新用 hammerspoon 加载一下脚本,重新加载的方式如下图:
 
-<img width="334" height="476" alt="image" src="https://github.com/user-attachments/assets/82888ec7-f8e2-4618-9985-918da625f5e5" />
+![](https://github.com/user-attachments/assets/82888ec7-f8e2-4618-9985-918da625f5e5)
 
 如果加载成功,就可以用了
 
