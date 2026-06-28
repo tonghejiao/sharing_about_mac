@@ -14,13 +14,13 @@ telegram
 Todoist
 腾讯文档
 百度网盘
-longshot -- 截图软件 截图+简单录屏
+longshot -- 截图软件 截图，长截图，简单录屏
 小米互联服务
 xmind
 wps
 qq音乐
 RClick -- 管理右键菜单
-gifski -- 视频文件转
+gifski -- 视频文件转gif
 Readest -- epub，mobi文件阅读器
 ```
 ### 使用Homebrew安装
@@ -103,6 +103,8 @@ brew install neovim
 brew install yazi
 ```
 ### 其他方式安装
+#### 安装Homebrew
+[安装方案](https://brew-cn.mintimate.cn/)
 #### 个人文档同步云盘
 坚果云
 [下载页面](https://www.jianguoyun.com/s/downloads)
