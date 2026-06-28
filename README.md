@@ -20,7 +20,8 @@ xmind
 wps
 qq音乐
 RClick -- 管理右键菜单
-gifski -- 视频文件转gif
+gifski -- 视频文件转
+Readest -- epub，mobi文件阅读器
 ```
 ### 使用Homebrew安装
 ```
@@ -102,3 +103,13 @@ brew install neovim
 brew install yazi
 ```
 ### 其他方式安装
+#### 个人文档同步云盘
+坚果云
+[下载页面](https://www.jianguoyun.com/s/downloads)
+#### 使用快捷键清理通知横幅
+Aliento
+[下载页面](https://inchman.gumroad.com/l/Aliento?layout=profile)
+在Name a fair price:里输入0即可
+#### 局域网文件分享，局域网剪切板同步
+flix
+[下载页面](https://flix.center/download.html)
