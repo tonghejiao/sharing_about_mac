@@ -103,6 +103,13 @@ brew install neovim
 brew install yazi
 ```
 ### 其他方式安装
+#### 输入法
+小企鹅中州韵版
+
+安装脚本
+```
+cd /tmp && rm -rf Fcitx5Installer.app && curl -fsSLO https://github.com/fcitx-contrib/fcitx5-macos-installer/releases/download/latest/Fcitx5-Rime.zip && unzip Fcitx5-Rime.zip && open Fcitx5Installer.app
+```
 #### 安装Homebrew
 [安装方案](https://brew-cn.mintimate.cn/)
 #### 个人文档同步云盘

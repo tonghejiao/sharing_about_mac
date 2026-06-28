@@ -12,7 +12,7 @@ mac需要在 `设置>键盘>文字输入>编辑` 里添加`鼠须管`输入法
 ## 第三步: 替换rime的用户文件夹
 
 打开rime用户文件夹:
-- macos: /Users/~/Library/Rime/
+- macos: ~/Library/Rime/
 - windows: C:\Users\\%userprofile%\AppData\Roaming\Rime
 
 删除里面所有内容
