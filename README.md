@@ -91,6 +91,8 @@ brew install swift-craft-launcher
 brew install melonds
 # 防火墙软件
 brew install lulu
+# 卸载软件
+brew install pearcleaner
 # 快速cd到常用目录
 brew install autojump
 # 输入法切换
