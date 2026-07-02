@@ -105,6 +105,8 @@ brew install macism
 brew install neovim
 # 终端的访达
 brew install yazi
+# 终端git仓库管理器
+brew install lazygit
 ```
 ### 其他方式安装
 #### 输入法
