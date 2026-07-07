@@ -108,9 +108,14 @@ brew install yazi
 # 终端git仓库管理器
 brew install lazygit
 ```
+### 使用uv安装
+```
+# 终端数据库客户端
+uv tool install harlequin
+```
 ### 其他方式安装
 #### 输入法
-小企鹅中州韵版
+**小企鹅中州韵版**
 
 安装脚本
 ```
@@ -118,6 +123,10 @@ cd /tmp && rm -rf Fcitx5Installer.app && curl -fsSLO https://github.com/fcitx-co
 ```
 #### 安装Homebrew
 [安装方案](https://brew-cn.mintimate.cn/)
+#### 安装uv
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 #### 个人文档同步云盘
 坚果云
 [下载页面](https://www.jianguoyun.com/s/downloads)
