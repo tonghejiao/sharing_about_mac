@@ -22,6 +22,7 @@ qq音乐
 RClick -- 管理右键菜单
 gifski -- 视频文件转gif
 Readest -- epub，mobi文件阅读器
+剪映专业版
 ```
 ### 使用Homebrew安装
 ```
@@ -95,6 +96,8 @@ brew install lulu
 brew install pearcleaner
 # 迅雷
 brew install thunder
+# 坚果云
+brew install nutstore
 # 快速cd到常用目录
 brew install autojump
 # 输入法切换
