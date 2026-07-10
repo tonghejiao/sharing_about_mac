@@ -93,6 +93,8 @@ brew install melonds
 brew install lulu
 # 卸载软件
 brew install pearcleaner
+# 迅雷
+brew install thunder
 # 快速cd到常用目录
 brew install autojump
 # 输入法切换
