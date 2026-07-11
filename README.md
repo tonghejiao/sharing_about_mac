@@ -116,7 +116,7 @@ brew install lazygit
 ### 使用uv安装
 ```
 # 终端数据库客户端
-uv tool install harlequin
+uv tool install sqlit-tui
 ```
 ### 其他方式安装
 #### 输入法
