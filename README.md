@@ -141,3 +141,35 @@ flix
 #### 音量管理，给每个app一个单独的音量
 finetune
 [下载页面](https://github.com/ronitsingh10/FineTune/releases)
+## chrome插件推荐
+### 广告拦截
+AdGuard 广告拦截器
+[下载页面](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg)
+### 使用键盘控制浏览器
+Surfingkeys
+[下载页面](https://chromewebstore.google.com/detail/surfingkeys/gfbliohnnapiefjpjlpjnehglfpaknnc)
+
+[Surfingkeys配置](data/Surfingkeys配置.md)
+### 网页翻译，视频字幕翻译
+Trancy - AI 翻译 & 双语字幕
+[下载页面](https://chromewebstore.google.com/detail/trancy-ai-translator-dual/mjdbhokoopacimoekfgkcoogikbfgngb)
+### b站播放器扩展
+哔哩哔哩(Bilibili)播放器扩展
+[下载页面](https://chromewebstore.google.com/detail/extension-for-bilibili-pl/ffoljpljalicgkljioegejmigkkkincm)
+### 网页脚本扩展
+篡改猴
+[下载页面](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+## 油猴脚本推荐
+### B站专栏 Markdown 编辑器
+Bilibili-Markdown
+[下载页面](https://greasyfork.org/zh-CN/scripts/452683-bilibili-markdown)
+### 简化CSDN页面
+CSDN Focus
+[下载页面](https://greasyfork.org/zh-CN/scripts/420352-csdn-focus)
+### CSDN去广告
+CSDN去广告
+[下载页面](https://greasyfork.org/zh-CN/scripts/42466-csdn%E5%8E%BB%E5%B9%BF%E5%91%8A)
+### 略过知乎、csdn、简书、掘金、gitee、微博安全中心中间页站外链接直达跳转，CSDN免登录复制
+[下载页面](https://greasyfork.org/zh-CN/scripts/444972-%E7%95%A5%E8%BF%87%E7%9F%A5%E4%B9%8E-csdn-%E7%AE%80%E4%B9%A6-%E6%8E%98%E9%87%91-gitee-%E5%BE%AE%E5%8D%9A%E5%AE%89%E5%85%A8%E4%B8%AD%E5%BF%83%E4%B8%AD%E9%97%B4%E9%A1%B5%E7%AB%99%E5%A4%96%E9%93%BE%E6%8E%A5%E7%9B%B4%E8%BE%BE%E8%B7%B3%E8%BD%AC-csdn%E5%85%8D%E7%99%BB%E5%BD%95%E5%A4%8D%E5%88%B6)
+### 文本选中复制
+[下载页面](https://greasyfork.org/zh-CN/scripts/405130-%E6%96%87%E6%9C%AC%E9%80%89%E4%B8%AD%E5%A4%8D%E5%88%B6)
