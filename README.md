@@ -26,8 +26,6 @@ Readest -- epub，mobi文件阅读器
 ```
 ### 使用Homebrew安装
 ```
-# idea
-brew install intellij-idea
 # 数据库客户端
 brew install dbeaver-community
 # 文本编辑器
