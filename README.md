@@ -79,8 +79,6 @@ brew install applite
 brew install pika
 # 局域网文件夹同步
 brew install syncthing-app
-# 音量管理，给每个app一个单独的音量
-brew install finetune
 # 快速修改常用的设置
 brew install only-switch
 # 鼠标滚轮倒转，鼠标按键功能配置
@@ -142,3 +140,6 @@ Aliento
 #### 局域网文件分享，局域网剪切板同步
 flix
 [下载页面](https://flix.center/download.html)
+#### 音量管理，给每个app一个单独的音量
+finetune
+[下载页面](https://github.com/ronitsingh10/FineTune/releases)
