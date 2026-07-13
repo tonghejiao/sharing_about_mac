@@ -160,6 +160,8 @@ Trancy - AI 翻译 & 双语字幕
 篡改猴
 [下载页面](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 ## 油猴脚本推荐
+### 一键导入所有脚本
+[下载脚本压缩包](./data/tampermonkey_scripts.zip)
 ### B站专栏 Markdown 编辑器
 Bilibili-Markdown
 [下载页面](https://greasyfork.org/zh-CN/scripts/452683-bilibili-markdown)
