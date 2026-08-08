@@ -34,7 +34,6 @@ brew install zed
 brew install obsidian
 brew install typora
 # 浏览器
-brew install arc
 brew install google-chrome
 # 电脑管家（展示内存占用，垃圾清理等）
 brew install tencent-lemon
