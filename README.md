@@ -23,6 +23,7 @@ RClick -- 管理右键菜单
 gifski -- 视频文件转gif
 Readest -- epub，mobi文件阅读器
 剪映专业版
+Battery -- 电量控制
 ```
 ### 使用Homebrew安装
 ```
@@ -52,8 +53,6 @@ brew install input-source-pro
 brew install jordanbaird-ice
 # 终端
 brew install warp
-# 充电限制
-brew install battery
 # git仓库管理
 brew install github
 # 翻译软件
