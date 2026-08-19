@@ -70,8 +70,6 @@ brew install hammerspoon
 brew install obs
 # 在屏幕上显示键盘按键
 brew install keycastr
-# homebrew的app store
-brew install applite
 # 屏幕取色软件 
 brew install pika
 # 局域网文件夹同步
