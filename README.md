@@ -23,7 +23,6 @@ RClick -- 管理右键菜单
 gifski -- 视频文件转gif
 Readest -- epub，mobi文件阅读器
 剪映专业版
-Battery -- 电量控制
 ```
 ### 使用Homebrew安装
 ```
@@ -91,6 +90,9 @@ brew install pearcleaner
 brew install thunder
 # 坚果云
 brew install nutstore
+# 电量控制
+brew tap mhaeuser/mhaeuser
+brew trust --cask mhaeuser/mhaeuser/battery-toolkit
 # 快速cd到常用目录
 brew install autojump
 # 输入法切换
