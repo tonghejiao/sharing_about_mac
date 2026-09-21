@@ -89,18 +89,18 @@ end
 function translate2En()
     -- 1. 获取选中文字
     local text = getSelectedText()
+
     if not text or text == "" then
         text = copyWithCmdC()
-    end
 
-    if not text or text == "" then
-        hs.alert.show("没有获取到选中文字")
-        log.e("没有获取到选中文字")
-        return
+        if not text or text == "" then
+            hs.alert.show("没有获取到选中文字")
+            log.e("没有获取到选中文字")
+            return
+        end
+    else
+        hs.pasteboard.setContents(text)
     end
-
-    -- 2. 写入剪贴板
-    hs.pasteboard.setContents(text)
 
     -- 3. 运行快捷指令
     local output, status, typ, rc = hs.execute('shortcuts run "翻译成英文"', true)
@@ -117,16 +117,6 @@ function translate2En()
         hs.eventtap.keyStroke({"cmd"}, "v")
     end
 end
-
--- 快捷键
-hs.hotkey.bind({ "option", "shift" }, "i",
-    translate2En
-)
-
-hs.hotkey.bind({"option", "shift"}, "o", function()
-    hs.eventtap.keyStroke({"cmd"}, "a")
-    translate2En()
-end)
 
 ```
 
