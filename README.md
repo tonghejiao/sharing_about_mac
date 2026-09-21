@@ -36,8 +36,6 @@ brew install typora
 # 浏览器
 brew install helium-browser
 brew install google-chrome
-# 电脑管家（展示内存占用，垃圾清理等）
-brew install tencent-lemon
 # 密码管理
 brew install keepassxc
 # api调用工具
@@ -59,8 +57,8 @@ brew install easydict
 # app启动器+工具集
 brew install raycast
 brew install utools
-# 窗口切换软件
-brew install alt-tab
+# 工具集app，我主要用它的硬件监控和窗口切换功能
+brew install --cask vorssaint
 # 解压软件
 brew install maczip
 # 自动化脚本执行器
