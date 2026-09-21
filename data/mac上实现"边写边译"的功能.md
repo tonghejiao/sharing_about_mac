@@ -38,28 +38,96 @@ https://www.icloud.com/shortcuts/f02cd8ebbf1d46338cfaee2fdbbd4734
 把下图的代码粘贴进去就行了
 
 ```lua
+local log = hs.logger.new("translate2En", "info")
 
-function translateToEn()
-  -- 1. 复制选中文本
-  hs.eventtap.keyStroke({"cmd"}, "c")
-  -- 2. 调用快捷指令获取翻译结果
-  local output, success, _, _ = hs.execute('shortcuts run "翻译成英文"', true)
-  -- 3. 判断输出是否有效
-  if output then
-    -- 4. 更新剪贴板（清空+设置）
-    hs.pasteboard.clearContents()
-    hs.pasteboard.setContents(output)
-    -- 5. 粘贴翻译文本
-    hs.eventtap.keyStroke({"cmd"}, "v")
-  end
+-- 获取当前选中的文字（优先用 Accessibility）
+local function getSelectedText()
+    local app = hs.application.frontmostApplication()
+    if not app then return nil end
+
+    local axApp = hs.axuielement.applicationElement(app)
+    if not axApp then return nil end
+
+    local focused = axApp:attributeValue("AXFocusedUIElement")
+    if not focused then
+        log.e("没有获取到焦点元素")
+        return nil
+    end
+
+    local selected = focused:attributeValue("AXSelectedText")
+    if selected and selected ~= "" then
+        return selected
+    end
+
+    return nil
 end
 
---绑定全局快捷键
-hs.hotkey.bind({"option", "shift"}, "i", translateToEn)
+-- 回退方案：模拟 Cmd+C 并等待剪贴板变化
+local function copyWithCmdC()
+    local oldContent = hs.pasteboard.getContents() or ""
+    local oldChangeCount = hs.pasteboard.changeCount()
+
+    hs.eventtap.keyStroke({"cmd"}, "c")
+
+    -- 等待剪贴板变化，最多等 1 秒
+    local start = hs.timer.secondsSinceEpoch()
+    while hs.timer.secondsSinceEpoch() - start < 1.0 do
+        if hs.pasteboard.changeCount() ~= oldChangeCount then
+            local newContent = hs.pasteboard.getContents()
+            if newContent and newContent ~= oldContent then
+                return newContent
+            end
+        end
+        hs.timer.usleep(30000) -- 30ms
+    end
+
+    log.e("Cmd+C 复制失败或超时")
+    return nil
+end
+
+-- 主功能
+function translate2En()
+    -- 1. 获取选中文字
+    local text = getSelectedText()
+    if not text or text == "" then
+        text = copyWithCmdC()
+    end
+
+    if not text or text == "" then
+        hs.alert.show("没有获取到选中文字")
+        log.e("没有获取到选中文字")
+        return
+    end
+
+    -- 2. 写入剪贴板
+    hs.pasteboard.setContents(text)
+
+    -- 3. 运行快捷指令
+    local output, status, typ, rc = hs.execute('shortcuts run "翻译成英文"', true)
+    if rc ~= 0 then
+        hs.alert.show("快捷指令执行失败")
+        log.e("快捷指令失败: " .. (output or ""))
+        return
+    end
+    if output then
+        -- 4. 更新剪贴板（清空+设置）
+        hs.pasteboard.clearContents()
+        hs.pasteboard.setContents(output)
+        -- 5. 粘贴翻译文本
+        hs.eventtap.keyStroke({"cmd"}, "v")
+    end
+end
+
+-- 快捷键
+hs.hotkey.bind({ "option", "shift" }, "i",
+    translate2En
+)
+
 hs.hotkey.bind({"option", "shift"}, "o", function()
-  hs.eventtap.keyStroke({"cmd"}, "a")
-  translateToEn()
+    hs.eventtap.keyStroke({"cmd"}, "a")
+    translate2En()
 end)
+
 ```
 
 粘贴完了以后,保存一下文件,然后重新用 hammerspoon 加载一下脚本,重新加载的方式如下图:
