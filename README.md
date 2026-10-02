@@ -4,6 +4,8 @@
 ## rime输入法 + 输入方案
 [rime + 输入方案 安装教程](data/rime%20+%20输入方案%20安装教程.md)
 ## 软件推荐
+### 软件配置
+snow-shot：[配置文件](./data/snow-shot-configuration.zip)
 ### 使用app store安装
 ```
 qq
@@ -14,7 +16,6 @@ telegram
 Todoist
 腾讯文档
 百度网盘
-longshot -- 截图软件 截图，长截图，简单录屏
 小米互联服务 -- 共享手机桌面，剪切板同步
 xmind
 wps
@@ -26,6 +27,9 @@ Readest -- epub，mobi文件阅读器
 ```
 ### 使用Homebrew安装
 ```
+# 截图软件
+brew trust mg-chao/tap
+brew install --cask mg-chao/tap/snow-shot
 # 数据库客户端
 brew install dbeaver-community
 # 文本编辑器
