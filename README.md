@@ -152,8 +152,8 @@ Surfingkeys
 
 [Surfingkeys配置](data/Surfingkeys配置.md)
 ### 网页翻译，视频字幕翻译
-Trancy - AI 翻译 & 双语字幕
-[下载页面](https://chromewebstore.google.com/detail/trancy-ai-translator-dual/mjdbhokoopacimoekfgkcoogikbfgngb)
+陪读蛙
+[下载页面](https://chromewebstore.google.com/detail/陪读蛙-翻译与学习/modkelfkcfjpgbfmnbnllalkiogfofhb?hl=zh-CN)
 ### b站播放器扩展
 哔哩哔哩(Bilibili)播放器扩展
 [下载页面](https://chromewebstore.google.com/detail/extension-for-bilibili-pl/ffoljpljalicgkljioegejmigkkkincm)
