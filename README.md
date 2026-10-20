@@ -64,7 +64,7 @@ brew install utools
 # 工具集app，我主要用它的硬件监控和窗口切换功能
 brew install --cask vorssaint
 # 解压软件
-brew install maczip
+brew install --cask macpacker
 # 自动化脚本执行器
 brew install hammerspoon
 # 录屏软件
